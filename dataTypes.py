@@ -30,10 +30,15 @@ exponent = 2 ** 3 # To the power of
 print(exponent)
 
 # Activity 1 - take two inputs, multiply them together and output answer
-number = input("Enter a number: ")
-number2 = input("Enter another number: ")
-multiply = int(number) * int(number2)
-print(multiply)
+number = float(input("Enter a Number: "))
+number2 = float(input("Enter another Number: "))
+print(number * number2)
 # Activity 2 - Input user's age, output age times 7
 age = input("Enter age: ")
+answer = int(age) * 7
+print(answer)
+
 # Activity 3 - Take radius as input, output volume of sphere (v = 4/3 x pi x r^3)
+radius = input("Enter radius: ")
+volume = 4 / 3 * 3.14159 * float(radius)**3.0
+print(volume)
