@@ -35,8 +35,8 @@
 # print("See you later!")
 
 # Question 16
-money = (int(input("enter amount of money: ")))
-while money < 100:
-    money = money + int(input("more money please: "))
-print("I accept your offer")
-print("You gave me", money)
+# money = (int(input("enter amount of money: ")))
+# while money < 100:
+#     money = money + int(input("more money please: "))
+# print("I accept your offer")
+# print("You gave me", money)
