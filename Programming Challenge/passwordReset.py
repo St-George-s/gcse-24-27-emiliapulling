@@ -1,7 +1,7 @@
 password1 = input("Enter a password: ")
-# while len(password1) < 8:
-#     print("Password too short")
-#     password1 = input("Enter a password: ")
+while len(password1) < 8:
+    print("Password too short")
+    password1 = input("Enter a password: ")
 
 capitalCount = 0
 lowerCaseCount = 0
@@ -24,7 +24,15 @@ while lowerCaseCount == 0:
         password1 = input("Enter a password: ")
 
 reenterPassword = input("Please enter your password again: ")
-if reenterPassword == password1:
-    print("Password reset!")
-else:
+while reenterPassword != password1:
     print("That isn't the same password, try again.")
+    reenterPassword = input("Please enter your password again: ")
+
+if ord (letter) >= 33 and ord (letter) <= 64:
+    print("Password is strong")
+elif len(password1) >= 10:
+    print("Password is medium strength")
+else:
+    print("Password is weak")
+
+print("Password reset!")
